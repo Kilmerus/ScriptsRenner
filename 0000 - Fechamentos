@@ -1,0 +1,73 @@
+CLASSIFICAÇÃO [Integração]
+
+SINTOMA:
+Bom dia tudo bem?
+Os itens 549998103 e 550201202 estão com estoque indisponível no RMS impedindo alocação.  Preciso que o estoque do RMS fique equalizado ao highjump para podermos alocar os itens.
+
+CAUSA:
+Erro relacionado ao problema PRB0040491
+
+INTERVENÇÃO:
+Sim.
+
+SOLUÇÃO:
+Enviado uma interface de ajuste da quantidade Bloqueada no RMS.
+
+SUPORTE OTIMIS
+
+
+
+
+
+--============================================= Equalização de Estoque no CD =============================================
+CLASSIFICAÇÃO [Integração]
+
+SINTOMA:
+Boa tarde tudo bem?
+O item 545962461 está com -10 peças indisponíveis impactando na alocação do item. No highjump temos 30 peças em buffer. Preciso que o estoque seja equalizado para podermos alocar o item.
+
+CAUSA:
+Erro relacionado ao problema PRB0040491 (Ou qualquer outro problema de integração de Interface).
+
+- Devido a quantidade de Itens, é inviável a análise de cada situação.
+
+INTERVENÇÃO:
+Sim.
+
+SOLUÇÃO:
+Enviado o ajuste de estoque ao RMS.
+
+** Enviado a disponibilização de estoque do que era possível, levado em consideração apenas estoque em Buffer e que não tinham quantidades a serem liberadas pelo processo de 50%+1.
+
+- Estoque equalizado pode ser consultado na tela de restreabilidae, transação 035.
+
+SUPORTE OTIMIS
+--============================================= 							 =============================================
+
+
+--============================================= Equalização de Estoque no eCommerce =============================================
+CLASSIFICAÇÃO [Integração]
+
+SINTOMA:
+Identificamos que estamos com divergência entre estoques, HJ X RMS, gerando pedidos com itens faltantes. Solicito verificação.
+segue itens de exemplo
+545428576
+546289660
+548276651
+
+CAUSA:
+Erro relacionado ao problema PRB0040491 (Ou qualquer outro problema de integração de Interface).
+
+- Devido a quantidade de Itens, é inviável a análise de cada situação.
+
+INTERVENÇÃO:
+Sim.
+
+SOLUÇÃO:
+Enviado o ajuste de estoque ao RMS.
+
+** Equalizado o estoque "Bloqueado" entre High Jump e RMS (Considerando o estoque do HIGH JUMP)
+
+
+SUPORTE OTIMIS
+--============================================= 							 =============================================
