@@ -33,7 +33,7 @@ select * from dba_waiters;
 ALTER SYSTEM KILL SESSION '239, 13897';
 
 
-
+-- Verificar transações que estão sendo "Canceladas"
 select t.INST_ID
           , s.sid
           , s.program
