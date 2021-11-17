@@ -1,5 +1,4 @@
 --Transações ativas no banco de dados
-
 SELECT   tran.start_time "Data/Hora inicio transação",
 sess.logon_time "Data/Hora de logon",
 sess.sid ||', '|| sess.serial# "SID, SERIAL#",  
@@ -13,7 +12,6 @@ AND sess.prev_child_number = cmd.child_number
 AND sess.prev_sql_id = cmd.sql_id;
 
 --Objetos que estão em lock
-
 SELECT obj.object_name "Nome do objeto",
 obj.object_type "Tipo do objeto",
 sess.sid ||', '|| sess.serial# "SID, SERIAL#",  
@@ -27,13 +25,13 @@ WHERE lobj.session_id = sess.sid
 AND lobj.object_id = obj.object_id;
 
 --Objetos/sessão que estão esperando outra sessão
-
 select * from dba_waiters;
 
 ALTER SYSTEM KILL SESSION '239, 13897';
 
 
 -- Verificar transações que estão sendo "Canceladas"
+-- undo_blocks_used - Compa se refere a quantidade de Blocos que está sendo desfeito
 select t.INST_ID
           , s.sid
           , s.program
