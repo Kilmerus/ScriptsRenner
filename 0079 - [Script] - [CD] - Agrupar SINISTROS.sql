@@ -1,7 +1,7 @@
 SET SERVEROUTPUT ON
 DECLARE
 /**************************************************************************************
--- Correção de contorno
+-- Correção de contorno - Agrupamento de Estoque em Sinistros
 -- 
 **************************************************************************************/
 CURSOR c_main IS
